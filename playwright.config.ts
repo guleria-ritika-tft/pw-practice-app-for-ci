@@ -41,12 +41,12 @@ export default defineConfig<TestOptions>({
     trace: "on-first-retry",
     // actionTimeout: 5000,
     // navigationTimeout: 5000,
-    headless: false,
+    headless: true,
     // actionTimeout: 10000,
     // navigationTimeout: 30000,
-    launchOptions: {
-      slowMo: 1000,
-    },
+    // launchOptions: {
+    //   slowMo: 1000,
+    // },
     video: {
       mode: "on",
       size: { height: 100, width: 100 },
