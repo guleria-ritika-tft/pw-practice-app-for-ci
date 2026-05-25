@@ -8,7 +8,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve"
+    "start": "ng serve",
+    "fixtureTest": "npx playwright test tests/ch5_fixtures.spec.ts"
   },
   "dependencies": {
     "@angular/animations": "^14.2.12",
@@ -66,10 +67,12 @@
     "@angular/compiler-cli": "^14.2.12",
     "@angular/language-service": "14.2.12",
     "@fortawesome/fontawesome-free": "^5.2.0",
+    "@playwright/test": "^1.60.0",
     "@types/leaflet": "1.2.3",
     "@types/node": "^12.12.70",
     "codelyzer": "^0.0.28",
     "conventional-changelog-cli": "^2.2.2",
+    "dotenv": "^17.4.2",
     "npm-run-all": "4.0.2",
     "rimraf": "2.6.1",
     "stylelint": "^15.6.0",
