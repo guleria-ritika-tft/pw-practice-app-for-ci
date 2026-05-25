@@ -9,9 +9,8 @@ export const test = base.extend<TestOptions>({
   globalsQaURL: ["", { option: true }],
 
   formLayoutPage: async ({ page }, use) => {
-    // await page.goto("/");
+    await page.goto("/");
     // await page.goto(process.env.URLOfWebApp);
-    await page.goto("http://localhost:4200/");
     await page.getByText("Forms").click();
     await page.getByText("Form Layouts").click();
     await use("");

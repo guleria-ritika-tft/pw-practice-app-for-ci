@@ -34,8 +34,9 @@ export default defineConfig<TestOptions>({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-    baseURL: "https://www.saucedemo.com/?utm_source=chatgpt.com",
-    globalsQaURL: "http://uitestingplayground.com/ajax",
+    baseURL: "http://localhost:4200/",
+    // baseURL: "https://www.saucedemo.com/?utm_source=chatgpt.com",
+    // globalsQaURL: "http://uitestingplayground.com/ajax",
     // screenshot: "only-on-failure",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
